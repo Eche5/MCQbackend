@@ -1,0 +1,282 @@
+[
+  {
+    "question": "The central nervous system consists of the",
+    "options": [
+      "brain and spinal cord",
+      "spinal nerves only",
+      "brain stem and the cerebellum",
+      "cerebrum and the spinal column"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which is not a function of the cerebrospinal fluid?",
+    "options": [
+      "It increases pressure at the base of the brain.",
+      "It fills the subarachnoid space.",
+      "It cushions the brain.",
+      "It protects the central nervous system."
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What is the primary purpose of the spinal cord?",
+    "options": [
+      "to facilitate the communication between the two hemispheres",
+      "to transmit electrical signals around the brain",
+      "to transmit electrical signals between the brain and the rest of the body",
+      "to produce hormones and neurotransmitters"
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "What is the purpose of the blood–brain barrier?",
+    "options": [
+      "It transmits electrical signals between neurons.",
+      "It protects the peripheral nervous system.",
+      "It supplies nutrients while preventing hazardous chemicals from reaching the brain.",
+      "It provides another layer of CSF."
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Neurotransmitters",
+    "options": [
+      "are signal molecules released at synapses",
+      "are found only in neurons with myelin sheaths",
+      "are produced by muscles",
+      "carry electrical impulses"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "The difference in voltage between the inside and outside of a resting cell is called",
+    "options": [
+      "repolarisation",
+      "action potential",
+      "depolarisation",
+      "resting potential"
+    ],
+    "correctOption": 3,
+    "points": 20
+  },
+  {
+    "question": "Heart rate is influenced by the cardiac centre in the",
+    "options": [
+      "thalamus",
+      "cerebellum",
+      "Ucerebral cortex",
+      "medulla oblongata"
+    ],
+    "correctOption": 3,
+    "points": 20
+  },
+  {
+    "question": "Which one of the followings is a function of the parasympathetic nervous system?",
+    "options": [
+      "pupil constriction",
+      "contraction of hair muscles",
+      "stimulation of oil and sweat glands in the skin",
+      "acceleration of heart beat"
+    ],
+    "correctOption": 0,
+    "points": 20
+  },
+  {
+    "question": "The hypothalamus and thalamus are in the",
+    "options": ["cerebrum", "cerebellum", "limbic system"],
+    "correctOption": 2,
+    "points": 20
+  },
+  {
+    "question": "An action potential is produced when positive and negative charges on the outside and the inside of the axon membrane are reversed because",
+    "options": [
+      "all potassium ions leave the axon",
+      "all sodium ions enter the axon",
+      "more sodium ions enter the axon as compared to potassium ions leaving it",
+      "more potassium ions enter the axon as compared to sodium ions leaving it"
+    ],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": " Which of the following muscular valve controls the flow of digestive juice from the hepatopancreatic duct to the duodenum?",
+    "options": [
+      " Sphincter of Oddi",
+      "uSemilunar valve",
+      "Pyloric sphincter",
+      "Ileocaecal valve"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": " Which of the following is present on the surface of intestinal epithelial cells?",
+    "options": [
+      "Zymogen granules",
+      "Pinocytic vesicles",
+      "Phagocytic vesicles",
+      "Microvilli"
+    ],
+    "correctOption": 3,
+    "points": 30
+  },
+  {
+    "question": "Lungs are enclosed within",
+    "options": [
+      "Pericardium",
+      "Perichondrium",
+      "Periosteum",
+      "Pleural membrane"
+    ],
+    "correctOption": 3,
+    "points": 30
+  },
+  {
+    "question": " The maximum amount of urea is present in",
+    "options": [
+      "Dorsal Aorta",
+      "Hepatic Vein",
+      "Renal Vein",
+      "Hepatic Portal Vein"
+    ],
+    "correctOption": 1,
+    "points": 20
+  },
+  {
+    "question": "Which of the following organs is known as the 'graveyard' of RBCs?",
+    "options": ["Spleen", "Kidney", "Liver", "Gall bladder"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which of the following organs contains the ‘Bundle of His’?",
+    "options": ["Pancreas", "Brain", "Kidney", "Heart"],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Heartbeat originates from the",
+    "options": ["papillary muscles", "SA node", "AV node", "Purkinje fibres"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following features is common in both humans and adult frogs?",
+    "options": [
+      "Internal fertilization",
+      "Ureotelic mode of excretion",
+      "Nucleated RBCs",
+      "Four chambered heart"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "The basic functional unit of a human kidney is known as",
+    "options": ["Nephron", "Pyramid", "Henle’s loop nephron", "Nephridia"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Single uriniferous tubule does not contain",
+    "options": [
+      "Loop of Henle",
+      "Collecting duct",
+      "Distal convoluted tubule",
+      "Bowman’s capsule"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following joints is immovable?",
+    "options": [
+      "Fibrous joint",
+      "Synovial joint",
+      "Cartilaginous joints",
+      "Ball and Socket joint"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "The middle portion of the human sperm contains",
+    "options": ["Nucleus", "Proteins", "Centriole", "Mitochondria"],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is the correctly matched pair of an organ and muscles present in the organ?",
+    "options": [
+      "Intestine – striated and involuntary",
+      "Upper arm – smooth muscle and fusiform in shape",
+      "Heart – involuntary and unstriated smooth muscle",
+      "Thigh – striated and voluntary"
+    ],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Cartilage at the end of long bones is",
+    "options": [
+      "Calcified cartilage",
+      "Fibrous cartilage",
+      "Hyaline cartilage",
+      "Elastic cartilage"
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "A deltoid ridge is present in",
+    "options": ["Humerus", "Femur", "Radius", "Ulna"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Intercostal muscles are attached with",
+    "options": ["Diaphragm", "Ribs", "Thigh", "Abdomen"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "The balancing organ of the ear is",
+    "options": [
+      "Organ of Corti",
+      "Vestibular apparatus",
+      "Tectorial membrane",
+      "Cochlea"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is a part of the hindbrain?",
+    "options": ["Hypothalamus", "Cerebellum", "Spinal cord", "Corpus callosum"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following parts of the brain controls body temperature and hunger?",
+    "options": ["Thalamus", "Pons", "Cerebellum", "Hypothalamus"],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Which of the following parts acts as an endocrine gland after ovulation?",
+    "options": [
+      "Vitelline membrane",
+      "Stroma",
+      "Germinal epithelium",
+      "Graafian follicle"
+    ],
+    "correctOption": 3,
+    "points": 10
+  }
+]

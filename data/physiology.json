@@ -1,0 +1,198 @@
+[
+  {
+    "question": "The hormone is secreted by which of the following organ?",
+    "options": ["Pancreas", "Liver", "Duodenum"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "If the stool of a person is whitish-grey, which organ is responsible for it?",
+    "options": ["Kidney", "Liver", "Spleen"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "A type of proteolytic enzyme is found in infants’ gastric juices which helps in the digestion of milk proteins. The name of the enzyme is?",
+    "options": ["Peptide", "Rennin", "Amylases"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Fat digestion occurs in?",
+    "options": ["Small intestine", "Stomach", "Duodenum"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Protein digestion occurs in?",
+    "options": ["Rectum", "Small intestine", "Ileum"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which one of the following can be found in pancreatic juice?",
+    "options": ["Trypsinogen", "Proenzyme pepsinogen", "Lysozyme"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Respiratory centre is located in?",
+    "options": ["Cerebellum", "Medulla oblongata", "Cerebrum"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Carbon Monoxide poisoning happens due to?",
+    "options": ["Carbonic acid", "Carboxy haemoglobin", "Methane"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "The internal lining in the trachea is made up of?",
+    "options": [
+      "Simple cuboidal epithelium",
+      "Pseudostratified epithelium",
+      "Simple squamous epithelium"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "A person has difficulty breathing due to inflammation of the bronchi and bronchioles. What does he or she has?",
+    "options": ["Emphysema", "Occupational respiratory disorders", "Asthma"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Kidney’s ability to produce concentrated urine depends on?",
+    "options": ["Diffusion", "Active transport", "Countercurrent mechanism"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "The right sequence of formation of urine is?",
+    "options": [
+      "Secretion, reabsorption, filtration",
+      "Reabsorption. Secretion, filtration",
+      "Filtration, reabsorption, secretion"
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "When an individual consumes a large amount of protein, what will he or she will excrete?",
+    "options": ["More urea and uric acid", "More glucose", "Salt"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "In the case of uricotelic animals, urea is removed via?",
+    "options": ["Ornithine cycle", "Kreb’s cycle", "Cori Cycle"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "The life span of red blood cells is?",
+    "options": ["100 days", "110 days", "120 days"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "The life span of white blood cells is?",
+    "options": [
+      "Between 20-30 days",
+      "Between two to three months",
+      "Less than ten days"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "What is the ratio of WBC to RBC in the body?",
+    "options": ["1:60", "1:600", "1:6000"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which is the largest blood vessel in the human body?",
+    "options": ["Pulmonary vein", "Capillaries", "Aorta"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is responsible for the red colour of blood?",
+    "options": ["Hemocyanin", "Myoglobin", "Haemoglobin"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "What should be the blood pressure of a healthy human being?",
+    "options": ["120/80", "120/100", "110/90"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which is a skull bone?",
+    "options": ["Arytenoid", "Cricoid", "Pterygoid"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which body muscle can resist fatigue?",
+    "options": ["Voluntary", "Striped", "Cardiac"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "In which area does the comprehension of spoken and written words take place?",
+    "options": ["Broca’s area", "Wernicke’s area", "Association area"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following controls skeletal muscles?",
+    "options": ["Autonomic nerves", "Somatic nerves", "Sympathetic nerves"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "When Sympathetic Nerves get activated, it releases?",
+    "options": [
+      "Adrenaline, which stimulates the organ",
+      "Adrenaline, which inhibits the organ",
+      "Acetylcholine, which stimulates the organ"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is not a neurotransmitter?",
+    "options": ["Glutamic Acid", "Acetylcholine", "Tyrosine"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is the largest cranial nerve?",
+    "options": ["Oculomotor nerve", "Olfactory nerve", "Trigeminal nerve"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which subject deals with the integrated functions of the body?",
+    "options": ["Histology", "Anatomy", "Physiology", "Psychology"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which functional groups are formed by the association of various tissues?",
+    "options": ["System", "Body", "Skeleton", "Organ"],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "What is the thickness of cell membrane?",
+    "options": ["70-100ºA", "100-150ºA", "30-60ºA", "10-20ºA"],
+    "correctOption": 0,
+    "points": 10
+  }
+]

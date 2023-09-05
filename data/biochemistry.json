@@ -1,0 +1,249 @@
+[
+  {
+    "question": "Which of the following makes water a liquid at room temperature?",
+    "options": [
+      "Noncovalent interactions",
+      "Hydrogen bonds between water molecules",
+      "Van der Waals forces of attraction",
+      "Covalent bonding"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "The heat of vaporization of water is ________",
+    "options": ["540 Kj/g", "580 kJ/g", "1060 J/g", "600 kJ/g"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "The degree of ionization does not depend on which of the following parameter?",
+    "options": ["Nature of solvent", "Temperature", "Concentration", "Current"],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Which of the following mixture in aqueous solution of equimolar concentration acts as a buffer solution?",
+    "options": [
+      "NH4 OH(excess) + HCl",
+      "HNO3 + NaOH",
+      "CH3 COOH + NaOH(excess)",
+      "H2 SO4 + KOH"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Based on which of the following enzymes Hydrolysis reactions are catalyzed?",
+    "options": ["Hydrolase", "Oxidoreductase", "Isomerase", "Ligase"],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is an imino acid?",
+    "options": ["Serine", "Alanine", "Glycine", "Proline"],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is a 39-residue hormone of the anterior pituitary gland?",
+    "options": ["Glucagon", "Bradykinin", "Corticotropin", "Insulin"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following statements is correct about column chromatography?",
+    "options": [
+      "Resolution improves as column length increases",
+      "Mobile phase is a porous solid material kept in the column with appropriate chemical characteristics",
+      "Stationary phase is a buffered solution that percolates through the mobile phase",
+      "Large proteins exit the column faster than tiny proteins"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Who deduced the double-helical structure of DNA?",
+    "options": [
+      "Watson and Francis Crick",
+      "Frederick Sanger",
+      "Anton van Leeuwenhoek",
+      "Mendel"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "The amino acid sequences of thousands of different proteins from many species have been determined using principles first developed by?",
+    "options": ["Watson and Crick", "Edman", "Sanger", "Mendel"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "The stability of an α-helix is not affected by which of the following?",
+    "options": [
+      "Bulkiness",
+      "Occurrence of alanine and glycine residues",
+      "Electrostatic repulsion",
+      "Interaction between R groups spaced three residues apart"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is abundantly found in collagen?",
+    "options": ["Tryptophan", "Alanine", "Glycine", "Serine"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is a function of chaperone protein?",
+    "options": [
+      "It provides a template for how the proteins should fold",
+      "It degrades proteins that have folded properly",
+      "It degrades proteins that have folded improperly",
+      "It rescues proteins that have folded improperly and allows them to refold properly"
+    ],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "The relationship between oxygen concentration and the fraction of binding sites occupied in myoglobin can best be described as ________",
+    "options": [
+      "Linear with a positive slope",
+      "Hyperbolic",
+      "Parabolic",
+      "Linear with a negative slope"
+    ],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "When compared to the first immune response to the same antigen, which of the following is not a hallmark of the secondary immune response?",
+    "options": [
+      "Antibody is generated fast",
+      "Many antibodies are produced",
+      "Antibody is generated without T-cell help",
+      "Antibody produced has a greater affinity for the antigen"
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is an invagination of the muscle cell’s sarcolemma?",
+    "options": [
+      "T tubules",
+      "Sarcoplasmic reticula",
+      "Microtubules",
+      "Cisternae"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "When the velocity of enzyme activity is plotted against substrate concentration, which of the following is obtained?",
+    "options": [
+      "Straight line with negative slope",
+      "Straight line with positive slope",
+      "Parabola",
+      "Hyperbolic curve"
+    ],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Which of the following catalyzes the reversible degradation of 2-phosphoglycerate to phosphoenolpyruvate?",
+    "options": ["Trypsin", "Enolase", "Chymotrypsin", "Hexokinase"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following enzyme catalyzes a reaction that introduces reduced nitrogen into cellular metabolism?",
+    "options": [
+      "Bacterial dinitrogenase reductase",
+      "Phosphatase",
+      "Bacterial glutamine synthase",
+      "Bacterial dinitrogenase oxidase"
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is an example of epimers?",
+    "options": [
+      "Mannose & Glucose",
+      "Glucose & Ribose",
+      "Galactose & Mannose",
+      "Glucose & Galactose"
+    ],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "In which of the following, glucose residues are linked by β1 → 4 glycosidic bonds?",
+    "options": ["Starch", "Cellulose", "Glycogen", "Amylose"],
+    "correctOption": 1,
+    "points": 10
+  },
+  {
+    "question": "Which of the following are important for white blood cell recognition?",
+    "options": [
+      "Glycoproteins",
+      "Glycosaminoglycans",
+      "Glycolipids",
+      "Proteoglycans"
+    ],
+    "correctOption": 0,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is true about phosphodiester linkage?",
+    "options": [
+      "3’-phosphate group of one nucleotide unit is joined to the 5’-hydroxyl group of the next nucleotide",
+      "3’-phosphate group of one nucleotide unit is joined to the 3’-hydroxyl group of the next nucleotide",
+      "5’-phosphate group of one nucleotide unit is joined to the 3’-hydroxyl group of the next nucleotide",
+      "5’-phosphate group of one nucleotide unit is joined to the 5’-hydroxyl group of the next nucleotide"
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Arrangement of nucleotides in DNA can be seen using which of the following instruments?",
+    "options": [
+      "Electron microscope",
+      "Light microscope",
+      "X-Ray crystallography",
+      "Ultracentrifuge"
+    ],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following involves carrying genetic information from DNA for protein synthesis?",
+    "options": ["sn-RNA", "r-RNA", "m-RNA", "t-RNA"],
+    "correctOption": 2,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is true about tm?",
+    "options": [
+      "The higher the content of G ≡ C base pairs, the lower the tm",
+      "The higher the content of A = T base pairs, the higher the tm",
+      "It can be termed as renaturation temperature",
+      "The higher the content of G ≡ C base pairs, the higher the tm"
+    ],
+    "correctOption": 3,
+    "points": 10
+  },
+  {
+    "question": "Which of the following is true about the Z-DNA helix?",
+    "options": [
+      "It has fewer base pairs per turn than B-DNA",
+      "It tends to be found at the 3’ end of the genes",
+      "It has alternating GC sequences",
+      "It is a permanent conformation of DNA"
+    ],
+    "correctOption": 0,
+    "points": 10
+  }
+]
