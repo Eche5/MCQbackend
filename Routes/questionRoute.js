@@ -1,8 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const questionController = require("../Controller/QuestionController");
+const verifyJWT = require("../Middlewares/verifyJWT");
 
-router.route("/").get(questionController.getAllAnatomyQuestion);
+router.use(verifyJWT);
+
+router.route("/anatomy").get(questionController.getAllAnatomyQuestion);
 router.route("/physiology").get(questionController.getAllPhysiologyQuestion);
 router
   .route("/biochemistry")

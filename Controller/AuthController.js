@@ -1,9 +1,7 @@
 const User = require("../Model/userModel");
 const jwt = require("jsonwebtoken");
+const asyncHandler = require("express-async-handler");
 
-const createToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "1d" });
-};
 exports.Register = async (req, res) => {
   try {
     const newUser = await User.create({
@@ -22,26 +20,91 @@ exports.Register = async (req, res) => {
     });
   }
 };
-exports.Login = async (req, res) => {
+exports.Login = asyncHandler(async (req, res) => {
   const { username, password } = req.body;
-  if (!username || !password) {
-    return res.status(400).json({
-      status: "failed",
-      message: "please provide a username and password",
-    });
-  }
-  const user = await User.findOne({ username }).select("+password");
 
-  if (!user || !(await user.comparePassword(password, user.password))) {
-    return res
-      .status(401)
-      .json({ status: "failed", message: "incorrect username or password" });
-  } else {
-    const token = createToken(user._id);
-    return res.status(200).json({
-      status: `welcome ${username}`,
-      user,
-    });
+  if (!username || !password) {
+    return res.status(400).json({ message: "All fields are required" });
   }
+
+  const foundUser = await User.findOne({ username }).exec();
+
+  if (!foundUser) {
+    return res.status(401).json({ message: "Unauthorized" });
+  }
+
+  const match = await foundUser.comparePassword(password, foundUser.password);
+
+  if (!match) return res.status(401).json({ message: "Unauthorized" });
+  const id = foundUser._id;
+  const accessToken = jwt.sign(
+    {
+      UserInfo: {
+        username: foundUser.username,
+      },
+    },
+    process.env.JWT_SECRET,
+    { expiresIn: "10s" }
+  );
+
+  const refreshToken = jwt.sign(
+    { username: foundUser.username },
+    process.env.JWT_REFRESH_SECRET,
+    { expiresIn: "7d" }
+  );
+
+  // Create secure cookie with refresh token
+  res.cookie("jwt", refreshToken, {
+    httpOnly: true, //accessible only by web server
+    secure: true, //https
+    sameSite: "None", //cross-site cookie
+    maxAge: 7 * 24 * 60 * 60 * 1000, //cookie expiry: set to match rT
+  });
+
+  // Send accessToken containing username and roles
+  res.json({ foundUser, accessToken });
+});
+
+exports.refresh = (req, res) => {
+  const cookies = req.cookies;
+
+  if (!cookies?.jwt) return res.status(401).json({ message: "Unauthorized" });
+  const refreshToken = cookies.jwt;
+
+  jwt.verify(
+    refreshToken,
+    process.env.JWT_REFRESH_SECRET,
+    asyncHandler(async (err, decoded) => {
+      if (err) return res.status(403).json({ message: "Forbidden" });
+
+      const foundUser = await User.findOne({
+        username: decoded.username,
+      }).exec();
+
+      if (!foundUser) return res.status(401).json({ message: "Unauthorized" });
+
+      const accessToken = jwt.sign(
+        {
+          UserInfo: {
+            username: foundUser.username,
+          },
+        },
+        process.env.JWT_SECRET,
+        { expiresIn: "15m" }
+      );
+      const id = foundUser._id;
+
+      res.json({ foundUser, accessToken });
+    })
+  );
 };
+exports.LogOut = (req, res) => {
+  const cookie = req.cookies;
+  // console.log(req);
+  // const cookies = cookie.split("=")[1];
+  if (!cookie) return res.sendStatus(204); //No content
+  res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+  res.json({ message: "Cookie cleared" });
+};
+
 exports.DeleteAccount = (req, res) => {};

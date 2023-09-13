@@ -34,7 +34,6 @@ exports.getOneResult = async (req, res) => {
   const course = req.params.course;
   try {
     const userResults = await Result.find({ user: userId, course });
-    console.log(userResults);
     res.status(200).json({
       status: "success",
       userResults,
