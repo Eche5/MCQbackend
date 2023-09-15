@@ -4,6 +4,10 @@ const asyncHandler = require("express-async-handler");
 
 exports.Register = async (req, res) => {
   try {
+    const { username } = req.body;
+    const user = await User.findOne({ username });
+    if (user)
+      return res.status(404).json({ message: "Username Already Exists" });
     const newUser = await User.create({
       username: req.body.username,
       password: req.body.password,
@@ -30,12 +34,15 @@ exports.Login = asyncHandler(async (req, res) => {
   const foundUser = await User.findOne({ username }).exec();
 
   if (!foundUser) {
-    return res.status(401).json({ message: "Unauthorized" });
+    return res.status(401).json({ message: "Username does not exist" });
   }
 
   const match = await foundUser.comparePassword(password, foundUser.password);
 
-  if (!match) return res.status(401).json({ message: "Unauthorized" });
+  if (!match)
+    return res
+      .status(404)
+      .json({ message: "Username or Password is incorrect" });
   const id = foundUser._id;
   const accessToken = jwt.sign(
     {
@@ -53,15 +60,14 @@ exports.Login = asyncHandler(async (req, res) => {
     { expiresIn: "7d" }
   );
 
-  // Create secure cookie with refresh token
   res.cookie("jwt", refreshToken, {
-    httpOnly: true, //accessible only by web server
-    secure: true, //https
-    sameSite: "None", //cross-site cookie
-    maxAge: 7 * 24 * 60 * 60 * 1000, //cookie expiry: set to match rT
+    httpOnly: true,
+    secure: true,
+    sameSite: "None",
+    maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 
-  // Send accessToken containing username and roles
+  // Send accessToken containing username
   res.json({ foundUser, accessToken });
 });
 
@@ -100,8 +106,7 @@ exports.refresh = (req, res) => {
 };
 exports.LogOut = (req, res) => {
   const cookie = req.cookies;
-  // console.log(req);
-  // const cookies = cookie.split("=")[1];
+
   if (!cookie) return res.sendStatus(204); //No content
   res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
   res.json({ message: "Cookie cleared" });
