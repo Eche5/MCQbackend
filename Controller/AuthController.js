@@ -13,8 +13,30 @@ exports.Register = async (req, res) => {
       password: req.body.password,
       confirmPassword: req.body.confirmPassword,
     });
+
+    const accessToken = jwt.sign(
+      {
+        UserInfo: {
+          username: req.body.username,
+        },
+      },
+      process.env.JWT_SECRET,
+      { expiresIn: "10s" }
+    );
+    const refreshToken = jwt.sign(
+      { username: req.body.username },
+
+      process.env.JWT_REFRESH_SECRET,
+      { expiresIn: "7d" }
+    );
+    res.cookie("jwt", refreshToken, {
+      httpOnly: true,
+      secure: true,
+      sameSite: "None",
+      maxAge: 7 * 24 * 60 * 60 * 1000,
+    });
     res.status(201).json({
-      status: "success",
+      accessToken,
       data: newUser,
     });
   } catch (error) {
