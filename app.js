@@ -11,11 +11,14 @@ const refreshRoute = require("./Routes/refreshRoute");
 const app = express();
 
 app.use(credentials);
+
 app.use(cors(corsOptions));
+
 app.use(express.urlencoded({ extended: false }));
 
 //middleware for cookies
 app.use(express.json());
+
 app.use(cookieParser());
 
 app.use("/", refreshRoute);

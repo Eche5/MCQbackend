@@ -1,9 +1,11 @@
 const Question = require("../Model/questionModel");
 const Physiology = require("../Model/physiologyModel");
 const Biochemistry = require("../Model/bioChemistryModel");
+
 exports.getAllAnatomyQuestion = async (req, res) => {
   try {
     const question = await Question.find();
+
     res.status(200).json({
       status: "success",
       result: question.length,
@@ -20,6 +22,7 @@ exports.getAllAnatomyQuestion = async (req, res) => {
 exports.getAllPhysiologyQuestion = async (req, res) => {
   try {
     const question = await Physiology.find();
+
     res.status(200).json({
       result: question.length,
       status: "success",
@@ -36,6 +39,7 @@ exports.getAllPhysiologyQuestion = async (req, res) => {
 exports.getAllBiochemistryQuestion = async (req, res) => {
   try {
     const question = await Biochemistry.find();
+
     res.status(200).json({
       result: question.length,
       status: "success",

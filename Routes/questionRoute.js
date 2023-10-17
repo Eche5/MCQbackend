@@ -6,7 +6,9 @@ const verifyJWT = require("../Middlewares/verifyJWT");
 router.use(verifyJWT);
 
 router.route("/anatomy").get(questionController.getAllAnatomyQuestion);
+
 router.route("/physiology").get(questionController.getAllPhysiologyQuestion);
+
 router
   .route("/biochemistry")
   .get(questionController.getAllBiochemistryQuestion);

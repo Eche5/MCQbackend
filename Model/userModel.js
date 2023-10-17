@@ -28,10 +28,14 @@ const userSchema = new mongoose.Schema({
     default: true,
   },
 });
+
 userSchema.pre("save", async function(next) {
   if (!this.isModified("password")) return next();
+
   this.password = await bcrypt.hash(this.password, 12);
+
   this.confirmPassword = undefined;
+
   next();
 });
 
@@ -41,11 +45,13 @@ userSchema.methods.comparePassword = async function(
 ) {
   return await bcrypt.compare(currentPassword, userPassword);
 };
+
 userSchema.virtual("results", {
   ref: "Result",
   foreignField: "user",
   localField: "_id",
 });
+
 const User = mongoose.model("User", userSchema);
 
 module.exports = User;

@@ -5,15 +5,18 @@ const asyncHandler = require("express-async-handler");
 exports.Register = async (req, res) => {
   try {
     const { username } = req.body;
+
     const user = await User.findOne({ username });
+
     if (user)
       return res.status(404).json({ message: "Username Already Exists" });
+
     const newUser = await User.create({
       username: req.body.username,
       password: req.body.password,
       confirmPassword: req.body.confirmPassword,
     });
-
+    //accessToken
     const accessToken = jwt.sign(
       {
         UserInfo: {
@@ -23,6 +26,7 @@ exports.Register = async (req, res) => {
       process.env.JWT_SECRET,
       { expiresIn: "10s" }
     );
+    //refresh token
     const refreshToken = jwt.sign(
       { username: req.body.username },
 
@@ -46,6 +50,7 @@ exports.Register = async (req, res) => {
     });
   }
 };
+
 exports.Login = asyncHandler(async (req, res) => {
   const { username, password } = req.body;
 
@@ -65,7 +70,9 @@ exports.Login = asyncHandler(async (req, res) => {
     return res
       .status(404)
       .json({ message: "Username or Password is incorrect" });
+
   const id = foundUser._id;
+  //accessToken
   const accessToken = jwt.sign(
     {
       UserInfo: {
@@ -75,7 +82,7 @@ exports.Login = asyncHandler(async (req, res) => {
     process.env.JWT_SECRET,
     { expiresIn: "10s" }
   );
-
+  //refreshToken
   const refreshToken = jwt.sign(
     { username: foundUser.username },
     process.env.JWT_REFRESH_SECRET,
@@ -97,6 +104,7 @@ exports.refresh = (req, res) => {
   const cookies = req.cookies;
 
   if (!cookies?.jwt) return res.status(401).json({ message: "Unauthorized" });
+
   const refreshToken = cookies.jwt;
 
   jwt.verify(
@@ -120,18 +128,18 @@ exports.refresh = (req, res) => {
         process.env.JWT_SECRET,
         { expiresIn: "15m" }
       );
-      const id = foundUser._id;
 
       res.json({ foundUser, accessToken });
     })
   );
 };
+
 exports.LogOut = (req, res) => {
   const cookie = req.cookies;
 
   if (!cookie) return res.sendStatus(204); //No content
+
   res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
+
   res.json({ message: "Cookie cleared" });
 };
-
-exports.DeleteAccount = (req, res) => {};

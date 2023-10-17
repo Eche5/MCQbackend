@@ -3,6 +3,7 @@ const Result = require("../Model/resultModel");
 exports.createResult = async (req, res) => {
   try {
     const result = await Result.create(req.body);
+
     res.status(201).json({
       status: "success",
       result,
@@ -18,6 +19,7 @@ exports.createResult = async (req, res) => {
 exports.getResults = async (req, res) => {
   try {
     const results = await Result.find().populate("user");
+
     res.status(201).json({
       status: "success",
       results,
@@ -29,11 +31,14 @@ exports.getResults = async (req, res) => {
     });
   }
 };
+
 exports.getOneResult = async (req, res) => {
   const userId = req.params.id;
+
   const course = req.params.course;
   try {
     const userResults = await Result.find({ user: userId, course });
+
     res.status(200).json({
       status: "success",
       userResults,
